@@ -5,8 +5,54 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:RGB_LED_STRIP_V2"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
+        Title="MainWindow" Height="450" Width="800" FontFamily="UniDreamLED" FontSize="30">
+    <Grid Background="#FF191313">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="15"/>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="15"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="15"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="15"/>
+        </Grid.RowDefinitions>
+        <StackPanel Orientation="Horizontal" Margin="7,0,0,0" Grid.Column="1" Grid.Row="1">
+            <Button Width="100" Height="40" Padding="2" Content="HOME" RenderTransformOrigin="0.5,0.5" Background="#FF575555">
+                <Button.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform AngleX="-21.736"/>
+                        <RotateTransform/>
+                        <TranslateTransform X="-5.98"/>
+                    </TransformGroup>
+                </Button.RenderTransform>
+            </Button>
+            <Button Width="100" Height="40" Padding="2" Content="PROFILE" RenderTransformOrigin="0.5,0.5" Background="#FF575555">
+                <Button.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform AngleX="-21.736"/>
+                        <RotateTransform/>
+                        <TranslateTransform X="-5.98"/>
+                    </TransformGroup>
+                </Button.RenderTransform>
+            </Button>
+        </StackPanel>
+        <TextBlock Grid.Column="2" Grid.Row="1" Margin="40,0,0,0" Foreground="#FF2CDE0F">RGB LED CONTROL BY BOJAN AND DANIJEL</TextBlock>
+        <Slider Grid.Column="1"  Orientation="Horizontal" Height="auto" Grid.Row="2" Margin="0,30,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" FontSize="72" UseLayoutRounding="False" Cursor="Pen" HorizontalAlignment="Right" Width="206" FlowDirection="RightToLeft" IsEnabled="False" SelectionEnd="-1" Interval="43">
+            <Slider.Background>
+                <LinearGradientBrush EndPoint="1,0" MappingMode="RelativeToBoundingBox" StartPoint="0,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="Red" Offset="0.7"/>
+                </LinearGradientBrush>
+            </Slider.Background>
+        </Slider>
     </Grid>
+
+
+
+
 </Window>
