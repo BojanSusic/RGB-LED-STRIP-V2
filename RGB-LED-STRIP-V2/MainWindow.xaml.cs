@@ -24,5 +24,10 @@ namespace RGB_LED_STRIP_V2
         {
             InitializeComponent();
         }
+
+        private void Slider_StylusLeave(object sender, StylusEventArgs e)
+        {
+
+        }
     }
 }

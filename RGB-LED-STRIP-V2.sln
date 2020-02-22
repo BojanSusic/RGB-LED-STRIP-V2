@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.29709.97
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RGB-LED-STRIP-V2", "RGB-LED-STRIP-V2\RGB-LED-STRIP-V2.csproj", "{5FA17D1E-9CB6-4B32-B4FF-683F4145E3D8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsApp2", "..\RGB-LED-STRIP\WindowsFormsApp2\WindowsFormsApp2.csproj", "{56CF37E3-C0E1-47F8-A861-7F65DF04E5D3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{5FA17D1E-9CB6-4B32-B4FF-683F4145E3D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5FA17D1E-9CB6-4B32-B4FF-683F4145E3D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5FA17D1E-9CB6-4B32-B4FF-683F4145E3D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56CF37E3-C0E1-47F8-A861-7F65DF04E5D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56CF37E3-C0E1-47F8-A861-7F65DF04E5D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56CF37E3-C0E1-47F8-A861-7F65DF04E5D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56CF37E3-C0E1-47F8-A861-7F65DF04E5D3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
