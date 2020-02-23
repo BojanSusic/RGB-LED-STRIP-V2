@@ -29,5 +29,10 @@ namespace RGB_LED_STRIP_V2
         {
 
         }
+
+        private void home_FocusableChanged(object sender, DependencyPropertyChangedEventArgs e)
+        {
+            home.Background = Brushes.Red;
+        }
     }
 }
