@@ -10,84 +10,32 @@
         BorderBrush="Cyan"
         WindowStyle="None"
         ResizeMode="CanMinimize">
-    <Grid Background="#FF404040">
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="20"/>
-            <ColumnDefinition Width="auto"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="15"/>
-        </Grid.ColumnDefinitions>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="15"/>
-            <RowDefinition Height="auto"/>
-            <RowDefinition Height="auto"/>
-            <RowDefinition Height="auto"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="15"/>
-        </Grid.RowDefinitions>
-        <StackPanel Orientation="Horizontal" Margin="7,0,0,0" Grid.Column="1" Grid.Row="1" >
-            <Button x:Name="home" Width="auto" Height="auto" Padding="2,2,2,2" Content="HOME" Margin="20,0,0,0" RenderTransformOrigin="0.5,0.5" Background="#FF212121" FontSize="20" FocusableChanged="home_FocusableChanged">
-                <Button.RenderTransform>
-                    <TransformGroup>
-                        <ScaleTransform/>
-                        <SkewTransform AngleX="-21.736"/>
-                        <RotateTransform/>
-                        <TranslateTransform X="-5.98"/>
-                    </TransformGroup>
-                </Button.RenderTransform>
 
-
-            </Button>
-            <Button Width="auto" Height="auto" Padding="2,2,5,2" Content="PROFILES" Margin="2,0,2,0" RenderTransformOrigin="0.5,0.5" Background="#FF212121"  FontSize="20">
-                <Button.RenderTransform>
-                    <TransformGroup>
-                        <ScaleTransform/>
-                        <SkewTransform AngleX="-21.736"/>
-                        <RotateTransform/>
-                        <TranslateTransform X="-5.98"/>
-                    </TransformGroup>
-                </Button.RenderTransform>
-            </Button>
-        </StackPanel>
-        <TextBlock Text="R" Grid.Column="1" Grid.Row="2" TextWrapping="NoWrap" Foreground="Red"/>
-        <Slider Grid.Column="1" Maximum="255" LargeChange="5" Minimum="0"  Orientation="Horizontal" Height="auto" Grid.Row="2" Margin="0,50,0,20" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" FontSize="72" UseLayoutRounding="False" Cursor="Pen" HorizontalAlignment="Right" Width="206" FlowDirection="RightToLeft" IsEnabled="False" SelectionEnd="-1" Interval="43">
-            <Slider.Background>
-                <LinearGradientBrush EndPoint="1,0" MappingMode="RelativeToBoundingBox" StartPoint="0,0">
-                    <GradientStop Color="Black" Offset="1"/>
-                    <GradientStop Color="Red"/>
-                </LinearGradientBrush>
-            </Slider.Background>
-        </Slider>
-        <TextBlock Text="B" Grid.Column="1" Grid.Row="4" TextWrapping="NoWrap" Foreground="Blue"/>
-        <Slider Grid.Column="1" Maximum="255" Minimum="0"  Orientation="Horizontal" Height="auto" Grid.Row="4" Margin="0,50,0,20" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" FontSize="72" UseLayoutRounding="False" Cursor="Pen" HorizontalAlignment="Right" Width="206" FlowDirection="RightToLeft" IsEnabled="False" SelectionEnd="-1" Interval="43">
-            <Slider.Background>
-                <LinearGradientBrush EndPoint="1,1" MappingMode="RelativeToBoundingBox" StartPoint="0,0">
-                    <GradientStop Color="Blue"/>
-                    <GradientStop Color="Black" Offset="1"/>
-                </LinearGradientBrush>
-            </Slider.Background>
-        </Slider>
-        <TextBlock Text="G" Grid.Column="1" Grid.Row="3" TextWrapping="NoWrap" Foreground="Lime"/>
-        <Slider Grid.Column="1"  Maximum="255" Minimum="0"   Orientation="Horizontal" Height="auto" Grid.Row="3" Margin="0,50,0,20" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" FontSize="72" UseLayoutRounding="False"  HorizontalAlignment="Right" Width="206" FlowDirection="RightToLeft" IsEnabled="False" SelectionEnd="-1" Interval="43">
-            <Slider.Background>
-                <LinearGradientBrush EndPoint="1,0" MappingMode="RelativeToBoundingBox" StartPoint="0,0">
-                    <GradientStop Color="Black" Offset="1"/>
-                    <GradientStop Color="Green"/>
-                </LinearGradientBrush>
-            </Slider.Background>
-        </Slider>
-        <Button Content="_" FontFamily="MV boli" Foreground="Blue" FontWeight="UltraBold"  Grid.Column="2" HorizontalAlignment="Left" Margin="294,1,0,0" Grid.Row="1" VerticalAlignment="Top" Width="53" RenderTransformOrigin="0.5,0.5" Height="39" Background="#FF212121" FontSize="40">
-            <Button.RenderTransform>
+    <Canvas  >
+        <Canvas.Background>
+            <ImageBrush ImageSource="devenv_v3SL7Lqaec.png"/>
+        </Canvas.Background>
+        <Button Content="SAVE" FontSize="20" Foreground="Lime" BorderBrush="Lime" BorderThickness="1" Background="#646464" Canvas.Left="267" Canvas.Bottom="53" Width="140" Height="32" Canvas.Top="463" />
+        <Polygon x:Name="BUT" Points="0,0 0,31 40,31 57,0 " Fill="Black" Width="57" Canvas.Left="583" Height="32" Canvas.Top="29" MouseUp="BUT_MouseUp_1" RenderTransformOrigin="0.5,0.5" >
+            <Polygon.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
-                    <SkewTransform AngleX="-21.595"/>
-                    <RotateTransform/>
-                    <TranslateTransform X="-9.5"/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="180"/>
+                    <TranslateTransform/>
                 </TransformGroup>
-            </Button.RenderTransform>
-        </Button>
+            </Polygon.RenderTransform>
 
-    </Grid>
+        </Polygon>
+        <Polygon x:Name="BUwT" Points="0,0 0,31 40,31 57,0 " Fill="Black" Canvas.Left="541" Height="32"  Width="57" Canvas.Top="30" MouseUp="BUT_MouseUp" />
+        <Button Content=" ! " FontSize="20" Canvas.Left="608" Canvas.Top="480"  Height="32" Width="32"/>
+        <ComboBox Height="24" Canvas.Left="80" Canvas.Top="388" Width="258"/>
+        <TextBox Height="24" Canvas.Left="446" TextAlignment="Left" Text="Color" FontSize="22"  FontFamily="Times" Canvas.Top="388" Width="130" Background="#FF969696"/>
+        <TextBox Height="auto" Canvas.Left="23" TextAlignment="Center"  Text="R" Canvas.Top="106" Width="46" Background="Transparent" Foreground="Red"/>
+        <TextBox Height="auto" Canvas.Left="23" TextAlignment="Center"  Text="G" Canvas.Top="191" Width="46" Background="Transparent" Foreground="Green"/>
+        <TextBox Height="auto" Canvas.Left="23" TextAlignment="Center"  Text="B" Canvas.Top="283" Width="46" Background="Transparent" Foreground="Blue"/>
+        <TextBox Height="auto" Canvas.Left="23" TextAlignment="Center" Text="FX" Canvas.Top="377" Width="46" Background="Transparent" Foreground="Black"/>
+    </Canvas>
 
 
 

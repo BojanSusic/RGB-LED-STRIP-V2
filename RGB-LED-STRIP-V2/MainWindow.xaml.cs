@@ -30,9 +30,22 @@ namespace RGB_LED_STRIP_V2
 
         }
 
-        private void home_FocusableChanged(object sender, DependencyPropertyChangedEventArgs e)
+       
+
+        private void BUT_MouseUp(object sender, MouseButtonEventArgs e)
         {
-            home.Background = Brushes.Red;
+            Close();
+        }
+
+        
+
+        
+
+        
+
+        private void BUT_MouseUp_1(object sender, MouseButtonEventArgs e)
+        {
+            Hide();
         }
     }
 }
